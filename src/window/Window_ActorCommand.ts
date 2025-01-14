@@ -1,7 +1,7 @@
-import type { Game_Actor } from "../../game/object";
+import type { Game_Actor } from "../object";
 import type { Window_Command } from "./Window_Command";
 
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Window_ActorCommand
 //
 // The window for selecting an actor's action on the battle screen.

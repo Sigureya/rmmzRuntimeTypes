@@ -5,7 +5,7 @@ import type {
   SceneManager_Interface,
   SoundManager_Interface,
   TextManager_Interface,
-} from "./manager";
+} from "../manager";
 
 export declare const DataManager: DataManager_Interface;
 export declare const ColorManager: ColorManager_Interface;

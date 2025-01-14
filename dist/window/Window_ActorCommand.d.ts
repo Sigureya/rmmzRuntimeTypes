@@ -1,4 +1,4 @@
-import type { Game_Actor } from "../../game/object";
+import type { Game_Actor } from "../object";
 import type { Window_Command } from "./Window_Command";
 export declare class Window_ActorCommand extends Window_Command<number> {
     makeCommandList(): void;
