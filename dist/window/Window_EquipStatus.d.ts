@@ -1,5 +1,5 @@
+import type { ParamID } from "@sigureya/rpgtypes";
 import type { Game_Actor } from "../object";
-import type { ParamID } from "../../schema";
 import type { Window_StatusBase } from "./Window_StatusBase";
 export declare class Window_EquipStatus extends Window_StatusBase {
     setActor(actor: Game_Actor): void;

@@ -1,5 +1,5 @@
+import type { Data_Equipment } from "@sigureya/rpgtypes";
 import type { Game_Actor } from "../object";
-import type { Data_Equipment } from "../../schema";
 import type { Window_StatusBase } from "./Window_StatusBase";
 export declare class Window_ShopStatus extends Window_StatusBase {
     refresh(): void;

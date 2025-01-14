@@ -1,4 +1,4 @@
-import type { EventCommand } from "../../../../../schema";
+import type { EventCommand } from "@sigureya/rpgtypes";
 import type { IDisplayableCharacter } from "./displayable";
 import type { MoveRouteCommand } from "./moveRouteCommand";
 export interface IMapEvent extends IDisplayableCharacter {
