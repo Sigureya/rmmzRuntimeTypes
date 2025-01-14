@@ -1,8 +1,8 @@
 import type { Rectangle } from "./rectangle";
-import type { Data_Item, ShopGoods } from "../../schema";
 import type { Window_Status } from "./Window_Status";
 import type { Window_Selectable } from "./Window_Selectable";
 import type { ISelectable } from "./types/ISelctable";
+import type { Data_Item, ShopGoods } from "@sigureya/rpgtypes";
 export declare class Window_ShopBuy extends Window_Selectable implements ISelectable<Data_Item> {
     initialize(rect: Rectangle): void;
     setupGoods(shopGoods: ShopGoods[]): void;

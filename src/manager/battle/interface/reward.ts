@@ -1,4 +1,4 @@
-import type { Data_AnyGoods } from "../../../../schema";
+import type { Data_AnyGoods } from "@sigureya/rpgtypes";
 
 export interface Battle_Reward {
   gold: number;

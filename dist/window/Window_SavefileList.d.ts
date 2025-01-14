@@ -1,5 +1,5 @@
+import type { SaveFileInfo } from "@sigureya/rpgtypes";
 import type { Rectangle } from "./rectangle";
-import type { SaveFileInfo } from "../../schema/";
 import type { Window_Selectable } from "./Window_Selectable";
 export declare class Window_SavefileList extends Window_Selectable {
     setMode(mode: string, autosave: boolean): void;
