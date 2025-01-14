@@ -1,4 +1,4 @@
-import type { Data_UsableItem } from "@sigureya/rpgtypes";
+import type { Data_UsableItem, ItemEffect } from "@sigureya/rpgtypes";
 import type { Game_Unit } from "./Game_Unit";
 import type { IUnit, IUsableItem, IBattler } from "./types/";
 // -----------------------------------------------------------------------------
@@ -114,21 +114,21 @@ export declare class Game_Action {
   executeMpDamage(target: IBattler, value: number): void;
   gainDrainedHp(value: number): void;
   gainDrainedMp(value: number): void;
-  applyItemEffect(taget: IBattler, effect: any): void;
-  itemEffectRecoverHp(taget: IBattler, effect: any): void;
-  itemEffectRecoverMp(taget: IBattler, effect: any): void;
-  itemEffectGainTp(taget: IBattler, effect: any): void;
-  itemEffectAddState(taget: IBattler, effect: any): void;
-  itemEffectAddAttackState(taget: IBattler, effect: any): void;
-  itemEffectAddNormalState(taget: IBattler, effect: any): void;
-  itemEffectRemoveState(taget: IBattler, effect: any): void;
-  itemEffectAddBuff(taget: IBattler, effect: any): void;
-  itemEffectAddDebuff(taget: IBattler, effect: any): void;
-  itemEffectRemoveBuff(taget: IBattler, effect: any): void;
-  itemEffectRemoveDebuff(taget: IBattler, effect: any): void;
-  itemEffectSpecial(taget: IBattler, effect: any): void;
-  itemEffectGrow(taget: IBattler, effect: any): void;
+  applyItemEffect(taget: IBattler, effect: ItemEffect): void;
+  itemEffectRecoverHp(taget: IBattler, effect: ItemEffect): void;
+  itemEffectRecoverMp(taget: IBattler, effect: ItemEffect): void;
+  itemEffectGainTp(taget: IBattler, effect: ItemEffect): void;
+  itemEffectAddState(taget: IBattler, effect: ItemEffect): void;
+  itemEffectAddAttackState(taget: IBattler, effect: ItemEffect): void;
+  itemEffectAddNormalState(taget: IBattler, effect: ItemEffect): void;
+  itemEffectRemoveState(taget: IBattler, effect: ItemEffect): void;
+  itemEffectAddBuff(taget: IBattler, effect: ItemEffect): void;
+  itemEffectAddDebuff(taget: IBattler, effect: ItemEffect): void;
+  itemEffectRemoveBuff(taget: IBattler, effect: ItemEffect): void;
+  itemEffectRemoveDebuff(taget: IBattler, effect: ItemEffect): void;
+  itemEffectSpecial(taget: IBattler, effect: ItemEffect): void;
+  itemEffectGrow(taget: IBattler, effect: ItemEffect): void;
 
-  itemEffectLearnSkill(taget: IBattler, effect: any): void;
+  itemEffectLearnSkill(taget: IBattler, effect: ItemEffect): void;
   makeSuccess(target: IBattler): any;
 }
