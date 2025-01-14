@@ -35,7 +35,7 @@ export declare class Game_Map {
   _battleback1Name: null | string;
   _battleback2Name: null;
   _needsRefresh: boolean;
-  _tileEvents: any;
+  _tileEvents: [];
   constructor();
   initialize(): void;
   setup(mapId: number): void;
@@ -117,7 +117,7 @@ export declare class Game_Map {
   tileId(x: number, y: number, z: number): number;
   layeredTiles(x: number, y: number): [];
   allTiles(x: number, y: number): [];
-  autotileType(x: number, y: number, z: any): number;
+  autotileType(x: number, y: number, z: number): number;
   isPassable(x: number, y: number, d: number): boolean;
   isBoatPassable(x: number, y: number): boolean;
   isShipPassable(x: number, y: number): boolean;
@@ -131,7 +131,7 @@ export declare class Game_Map {
   regionId(x: number, y: number): number;
   startScroll(direction: number, distance: number, speed: number): void;
   isScrolling(): boolean;
-  update(sceneActive: any): void;
+  update(sceneActive: boolean): void;
   updateScroll(): void;
   scrollDistance(): number;
   doScroll(direction: number, distance: number): void;
