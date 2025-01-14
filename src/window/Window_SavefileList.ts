@@ -1,8 +1,8 @@
+import type { SaveFileInfo } from "@sigureya/rpgtypes";
 import type { Rectangle } from "./rectangle";
-import type { SaveFileInfo } from "../../schema/";
 import type { Window_Selectable } from "./Window_Selectable";
 
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Window_SavefileList
 //
 // The window for selecting a save file on the save and load screens.
