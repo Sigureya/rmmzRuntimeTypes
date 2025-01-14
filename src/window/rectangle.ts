@@ -1,1 +1,1 @@
-export { Rectangle } from "../../types";
+export type { Rectangle } from "pixi.js";
