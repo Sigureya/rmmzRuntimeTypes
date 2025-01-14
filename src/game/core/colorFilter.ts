@@ -1,2 +1,3 @@
-export interface ColorFilter {}
-// extends PIXI.Filter {}
+import type { Filter } from "pixi.js";
+
+export type ColorFilter = Filter;
