@@ -1,4 +1,4 @@
-import type { ParamID } from "../../schema";
+import type { ParamID } from "@sigureya/rpgtypes";
 export declare class Game_ActionResult {
     used: boolean;
     missed: boolean;

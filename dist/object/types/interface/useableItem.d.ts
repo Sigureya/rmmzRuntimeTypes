@@ -1,4 +1,4 @@
-import type { Data_UsableItem } from "../../../../schema";
+import type { Data_UsableItem } from "@sigureya/rpgtypes";
 export interface IUsableItem {
     initialize(item: Data_UsableItem): void;
     isSkill(): boolean;

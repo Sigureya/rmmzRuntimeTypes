@@ -1,4 +1,4 @@
-import type { ConstatnOrVariable, OPERATION, CommandParameters, EventCommand } from "../../schema";
+import type { EventCommand, CommandParameters, ConstatnOrVariable, OPERATION } from "@sigureya/rpgtypes";
 import type { Game_Actor } from "./Game_Actor";
 import type { Game_Battler } from "./Game_Battler";
 export declare class Game_Interpreter extends Game_EventCommandExecuter {

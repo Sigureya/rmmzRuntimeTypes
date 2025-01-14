@@ -1,5 +1,5 @@
+import type { ColorRGBA } from "@sigureya/rpgtypes";
 import type { Game_Picture } from "./Game_Picture";
-import type { ColorRGBA } from "../../types/colorRGBA";
 export declare class Game_Screen {
     _zoomX: number;
     _zoomY: number;

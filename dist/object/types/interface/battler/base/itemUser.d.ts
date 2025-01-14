@@ -1,4 +1,4 @@
-import type { Data_Skill } from "../../../../../../schema";
+import type { Data_Skill } from "@sigureya/rpgtypes";
 export interface ItemUser {
     canInput(): boolean;
     canMove(): boolean;

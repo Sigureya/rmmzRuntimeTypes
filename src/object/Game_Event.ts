@@ -1,4 +1,4 @@
-import type { MapEventPage, EventCommand } from "../../schema";
+import type { EventCommand, MapEventPage } from "@sigureya/rpgtypes";
 import type { Game_Character } from "./Game_Character";
 import type { IMapEvent, MoveRouteCommand } from "./types/";
 

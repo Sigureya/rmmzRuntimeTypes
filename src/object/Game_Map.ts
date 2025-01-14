@@ -1,9 +1,9 @@
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Game_Map
 //
 // The game object class for a map. It contains scrolling and passage
 
-import type { Data_CommonEvent, Data_Tileset } from "../../schema";
+import type { Data_CommonEvent, Data_Tileset } from "@sigureya/rpgtypes";
 import type { Game_CommonEvent } from "./Game_CommonEvent";
 import type { Game_Event } from "./Game_Event";
 import type { Game_Interpreter } from "./Game_Interpreter";
@@ -105,30 +105,30 @@ export declare class Game_Map {
   refresh(): void;
   refreshTileEvents(): void;
   eventsXy(x: number, y: number): Game_Event[];
-  eventsXyNt(x: any, y: any): Game_Event[];
-  tileEventsXy(x: any, y: any): Game_Event[];
+  eventsXyNt(x: number, y: number): Game_Event[];
+  tileEventsXy(x: number, y: number): Game_Event[];
   eventIdXy(x: number, y: number): number;
   scrollDown(distance: number): void;
   scrollLeft(distance: number): void;
   scrollRight(distance: number): void;
   scrollUp(distance: number): void;
   isValid(x: number, y: number): boolean;
-  checkPassage(x: any, y: any, bit: number): boolean;
+  checkPassage(x: number, y: number, bit: number): boolean;
   tileId(x: number, y: number, z: number): number;
-  layeredTiles(x: any, y: any): [];
-  allTiles(x: any, y: any): [];
-  autotileType(x: any, y: any, z: any): number;
-  isPassable(x: any, y: any, d: number): boolean;
-  isBoatPassable(x: any, y: any): boolean;
-  isShipPassable(x: any, y: any): boolean;
-  isAirshipLandOk(x: any, y: any): boolean;
-  checkLayeredTilesFlags(x: any, y: any, bit: number): boolean;
-  isLadder(x: any, y: any): boolean;
-  isBush(x: any, y: any): boolean;
-  isCounter(x: any, y: any): boolean;
-  isDamageFloor(x: any, y: any): boolean;
-  terrainTag(x: any, y: any): number;
-  regionId(x: any, y: any): number;
+  layeredTiles(x: number, y: number): [];
+  allTiles(x: number, y: number): [];
+  autotileType(x: number, y: number, z: any): number;
+  isPassable(x: number, y: number, d: number): boolean;
+  isBoatPassable(x: number, y: number): boolean;
+  isShipPassable(x: number, y: number): boolean;
+  isAirshipLandOk(x: number, y: number): boolean;
+  checkLayeredTilesFlags(x: number, y: number, bit: number): boolean;
+  isLadder(x: number, y: number): boolean;
+  isBush(x: number, y: number): boolean;
+  isCounter(x: number, y: number): boolean;
+  isDamageFloor(x: number, y: number): boolean;
+  terrainTag(x: number, y: number): number;
+  regionId(x: number, y: number): number;
   startScroll(direction: number, distance: number, speed: number): void;
   isScrolling(): boolean;
   update(sceneActive: any): void;

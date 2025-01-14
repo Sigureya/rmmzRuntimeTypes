@@ -1,4 +1,4 @@
-import type { ParamID } from "../../../../../../schema";
+import type { ParamID } from "@sigureya/rpgtypes";
 
 export interface IParam {
   paramMin(paramId: ParamID): number;

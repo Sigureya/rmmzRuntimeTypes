@@ -1,7 +1,7 @@
-import type { Data_UsableItem } from "../../schema";
+import type { Data_UsableItem } from "@sigureya/rpgtypes";
 import type { Window_MenuStatus } from "./Window_MenuStatus";
 
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Window_MenuActor
 //
 // The window for selecting a target actor on the item and skill screens.

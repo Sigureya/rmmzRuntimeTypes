@@ -1,12 +1,12 @@
-import type {
-  Data_CommonEvent,
-  AnimationRequest,
-  BallonRequest,
-  AnimationTarget,
-} from "../../schema";
 import type { Game_Character } from "./Game_Character";
 import type { LAST_ACTION_TYPES } from "./constant/gameTemp";
 import type { Game_Battler } from "./Game_Battler";
+import type {
+  AnimationRequest,
+  AnimationTarget,
+  BallonRequest,
+  Data_CommonEvent,
+} from "@sigureya/rpgtypes";
 
 export declare class Game_Temp {
   _isPlaytest: boolean;

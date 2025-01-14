@@ -1,7 +1,7 @@
+import type { Data_UsableItem } from "@sigureya/rpgtypes";
 import type { Game_Unit } from "./Game_Unit";
 import type { IUnit, IUsableItem, IBattler } from "./types/";
-import type { Data_UsableItem } from "../../schema";
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Game_Action
 //
 // The game object class for a battle action.

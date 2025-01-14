@@ -1,4 +1,4 @@
-import type { Data_UsableItem } from "../../schema";
+import type { Data_UsableItem } from "@sigureya/rpgtypes";
 import type { Window_MenuStatus } from "./Window_MenuStatus";
 export declare class Window_MenuActor extends Window_MenuStatus {
     active: Window_MenuActor;

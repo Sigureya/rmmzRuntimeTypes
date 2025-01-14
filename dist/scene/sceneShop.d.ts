@@ -1,4 +1,4 @@
-import type { ShopGoods } from "../../schema";
+import type { ShopGoods } from "@sigureya/rpgtypes";
 import type { Rectangle } from "../window";
 export declare class Scene_Shop {
     initialize(): void;
