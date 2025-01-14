@@ -7,7 +7,7 @@ export declare class Game_Picture {
     _scaleX: number;
     _scaleY: number;
     _opacity: number;
-    _blendMode: any;
+    _blendMode: number;
     _tone: null | ColorRGBA;
     _angle: number;
     _targetX: number;
@@ -38,8 +38,8 @@ export declare class Game_Picture {
     initTarget(): void;
     initTone(): void;
     initRotation(): void;
-    move(origin: number, x: number, y: number, scaleX: number, scaleY: number, opacity: number, blendMode: any, duration: number, easingType: number): void;
-    show(name: string, origin: number, x: number, y: number, scaleX: number, scaleY: number, opacity: number, blendMode: any, duration: number, easingType: number): void;
+    move(origin: number, x: number, y: number, scaleX: number, scaleY: number, opacity: number, blendMode: number, duration: number, easingType: number): void;
+    show(name: string, origin: number, x: number, y: number, scaleX: number, scaleY: number, opacity: number, blendMode: number, duration: number, easingType: number): void;
     rotate(speed: number): void;
     tint(tone: ColorRGBA, duration: number): void;
     update(): void;
