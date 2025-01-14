@@ -1,4 +1,4 @@
-import type { Data_UsableItem, ItemEffect } from "@sigureya/rpgtypes";
+import type { Action, Data_UsableItem, ItemEffect } from "@sigureya/rpgtypes";
 import type { Game_Unit } from "./Game_Unit";
 import type { IUnit, IUsableItem, IBattler } from "./types/";
 // -----------------------------------------------------------------------------
@@ -11,7 +11,7 @@ export declare class Game_Action {
   _forcing: boolean;
   _item: IUsableItem;
   _targetIndex: number;
-  _reflectionTarget: any;
+  _reflectionTarget?: IBattler;
   static EFFECT_RECOVER_HP: 11;
   static EFFECT_RECOVER_MP: 12;
   static EFFECT_GAIN_TP: 13;
@@ -37,18 +37,18 @@ export declare class Game_Action {
   subject(): IBattler;
   friendsUnit(): IUnit<IBattler>;
   opponentsUnit(): IUnit<IBattler>;
-  setEnemyAction(action: any): void;
-  setAttack(): any;
-  setGuard(): any;
-  setSkill(skillId: number): any;
-  setItem(itemId: number): any;
-  setItemObject(object: Data_UsableItem): any;
-  setTarget(targetIndex: number): any;
+  setEnemyAction(action: Action): void;
+  setAttack(): void;
+  setGuard(): void;
+  setSkill(skillId: number): void;
+  setItem(itemId: number): void;
+  setItemObject(object: Data_UsableItem): void;
+  setTarget(targetIndex: number): void;
   item(): Data_UsableItem | null;
   isSkill(): boolean;
   isItem(): boolean;
   numRepeats(): number;
-  checkItemScope(list: number[]): any;
+  checkItemScope(list: ReadonlyArray<number>): boolean;
   isForOpponent(): boolean;
   isForFriend(): boolean;
   isForEveryone(): boolean;
@@ -58,9 +58,9 @@ export declare class Game_Action {
   isForOne(): boolean;
   isForRandom(): boolean;
   isForAll(): boolean;
-  needsSelection(): any;
-  numTargets(): any;
-  checkDamageType(list: []): any;
+  needsSelection(): boolean;
+  numTargets(): number;
+  checkDamageType(list: ReadonlyArray<number>): boolean;
   isHpEffect(): boolean;
   isMpEffect(): boolean;
   isDamage(): boolean;
@@ -75,7 +75,7 @@ export declare class Game_Action {
   isGuard(): boolean;
   isMagicSkill(): boolean;
   decideRandomTarget(): void;
-  setConfusion(): any;
+  setConfusion(): void;
   prepare(): void;
   isValid(): boolean;
   speed(): number;
@@ -95,7 +95,7 @@ export declare class Game_Action {
   testApply(target: IBattler): boolean;
   testLifeAndDeath(target: IBattler): boolean;
   hasItemAnyValidEffects(target: IBattler): boolean;
-  testItemEffect(target: IBattler, effect: any): boolean;
+  testItemEffect(target: IBattler, effect: ItemEffect): boolean;
   itemCnt(target: IBattler): number;
   itemMrf(target: IBattler): number;
   itemHit(battler: IBattler): number;
@@ -106,9 +106,9 @@ export declare class Game_Action {
   evalDamageFormula(target: IBattler): number;
   calcElementRate(target: IBattler): number;
   elementsMaxRate(target: IBattler, elements: number[]): number;
-  applyCritical(damage: number): any;
+  applyCritical(damage: number): number;
   applyVariance(damage: number, variance: number): number;
-  applyGuard(damage: number, target: IBattler): any;
+  applyGuard(damage: number, target: IBattler): number;
   executeDamage(target: IBattler, value: number): void;
   executeHpDamage(target: IBattler, value: number): void;
   executeMpDamage(target: IBattler, value: number): void;
@@ -130,5 +130,5 @@ export declare class Game_Action {
   itemEffectGrow(taget: IBattler, effect: ItemEffect): void;
 
   itemEffectLearnSkill(taget: IBattler, effect: ItemEffect): void;
-  makeSuccess(target: IBattler): any;
+  makeSuccess(target: IBattler): void;
 }
