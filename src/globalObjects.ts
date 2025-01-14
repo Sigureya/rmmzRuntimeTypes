@@ -11,7 +11,7 @@ import type {
   Game_Map,
   Game_Player,
   Game_Troop,
-} from "../object";
+} from "./object";
 
 // export declare let $gameTemp: Game_Temp;
 export declare let $gameSystem: Game_System;
