@@ -1,8 +1,9 @@
-import type { ColorRGBA, AudioFileParams } from "../../types";
-
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Game_System
 //
+
+import type { AudioFileParams, ColorRGBA } from "@sigureya/rpgtypes";
+
 // The game object class for the system data.
 export declare class Game_System {
   _saveEnabled: boolean;

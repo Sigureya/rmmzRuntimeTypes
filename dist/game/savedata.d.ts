@@ -1,4 +1,4 @@
-import type { Game_Party, Game_Actors, Game_Switches, Game_Timer, Game_Variables, Game_Player, Game_System, Game_Map, Game_Screen, Game_SelfSwitches } from "./object";
+import type { Game_Party, Game_Actors, Game_Switches, Game_Timer, Game_Variables, Game_Player, Game_System, Game_Map, Game_Screen, Game_SelfSwitches } from "../object";
 export interface Savedata {
     system: Game_System;
     scrren: Game_Screen;

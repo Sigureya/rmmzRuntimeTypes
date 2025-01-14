@@ -1,12 +1,12 @@
 import type {
-  Data_State,
-  Data_Equipment,
-  Data_Weapon,
   Data_Armor,
+  Data_Equipment,
   Data_Skill,
-  ParamID,
+  Data_State,
   Data_UsableItem,
-} from "../../schema";
+  Data_Weapon,
+  ParamID,
+} from "@sigureya/rpgtypes";
 import type { IBattlerBase } from "./types/interface/battler/base";
 
 export declare class Game_BattlerBase implements IBattlerBase {

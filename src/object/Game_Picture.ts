@@ -1,9 +1,9 @@
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Game_Picture
 //
 // The game object class for a picture.
 
-import type { ColorRGBA } from "../../types/colorRGBA";
+import type { ColorRGBA } from "@sigureya/rpgtypes";
 
 export declare class Game_Picture {
   _name: string;

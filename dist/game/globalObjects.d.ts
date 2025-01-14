@@ -1,4 +1,4 @@
-import type { Game_System, Game_Screen, Game_Timer, Game_Message, Game_Switches, Game_Variables, Game_SelfSwitches, Game_Actors, Game_Party, Game_Map, Game_Player, Game_Troop } from "./object";
+import type { Game_System, Game_Screen, Game_Timer, Game_Message, Game_Switches, Game_Variables, Game_SelfSwitches, Game_Actors, Game_Party, Game_Map, Game_Player, Game_Troop } from "../object";
 export declare let $gameSystem: Game_System;
 export declare let $gameScreen: Game_Screen;
 export declare let $gameTimer: Game_Timer;

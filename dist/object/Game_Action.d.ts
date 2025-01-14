@@ -1,6 +1,6 @@
+import type { Data_UsableItem } from "@sigureya/rpgtypes";
 import type { Game_Unit } from "./Game_Unit";
 import type { IUnit, IUsableItem, IBattler } from "./types/";
-import type { Data_UsableItem } from "../../schema";
 export declare class Game_Action {
     _subjectActorId: number;
     _subjectEnemyIndex: number;

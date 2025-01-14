@@ -1,4 +1,4 @@
-import type { Data_UsableItem } from "../../schema";
+import type { Data_UsableItem } from "@sigureya/rpgtypes";
 import type { Game_Actor } from "../object";
 import type { Window_ItemList, Window_MenuActor } from "../window";
 import type { Rectangle } from "../window/rectangle";
