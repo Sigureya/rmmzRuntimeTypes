@@ -25,7 +25,7 @@
     "typescript"
   ],
   "dependencies": {
-    "pixi.js": "^8.2.3"
+    "pixi.js": "^8.6.6"
   },
   "author": "Max Siguren",
   "license": "MIT",
