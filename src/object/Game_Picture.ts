@@ -13,7 +13,7 @@ export declare class Game_Picture {
   _scaleX: number;
   _scaleY: number;
   _opacity: number;
-  _blendMode: any;
+  _blendMode: number;
   _tone: null | ColorRGBA;
   _angle: number;
   _targetX: number;
@@ -51,7 +51,7 @@ export declare class Game_Picture {
     scaleX: number,
     scaleY: number,
     opacity: number,
-    blendMode: any,
+    blendMode: number,
     duration: number,
     easingType: number
   ): void;
@@ -63,7 +63,7 @@ export declare class Game_Picture {
     scaleX: number,
     scaleY: number,
     opacity: number,
-    blendMode: any,
+    blendMode: number,
     duration: number,
     easingType: number
   ): void;
