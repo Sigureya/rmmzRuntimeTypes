@@ -1,8 +1,8 @@
-import type { Data_Item, Data_Equipment } from "../../schema/";
 import type { Window_Message } from "./Window_Message";
 import type { Window_ItemList } from "./Window_ItemList";
+import type { Data_AnyGoods } from "@sigureya/rpgtypes";
 
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Window_EventItem
 //
 // The window used for the event command [Select Item].
@@ -21,11 +21,11 @@ export declare class Window_EventItem extends Window_ItemList {
 
   placeCancelButton(): void;
 
-  includes(item: Data_Item | Data_Equipment): void;
+  includes(item: Data_AnyGoods): void;
 
   needsNumber(): void;
 
-  isEnabled(/*item*/): boolean;
+  isEnabled(/* item*/): boolean;
 
   onOk(): void;
 

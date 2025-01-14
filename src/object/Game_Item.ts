@@ -1,9 +1,7 @@
-import type { Data_Armor, Data_Weapon } from "../../schema/";
-
-type VariantItem = Data_Weapon | Data_Armor;
+import type { Data_Armor, Data_Weapon } from "@sigureya/rpgtypes";
 
 export declare class Game_Item {
-  object(): VariantItem;
+  object(): Data_Weapon | Data_Armor;
   isSkill(): boolean;
   isItem(): boolean;
   isUsableItem(): boolean;

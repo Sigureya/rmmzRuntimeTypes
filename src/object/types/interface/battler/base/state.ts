@@ -1,4 +1,4 @@
-import type { Data_State } from "../../../../../../schema";
+import type { Data_State } from "@sigureya/rpgtypes";
 
 export interface IState {
   clearStates(): void;

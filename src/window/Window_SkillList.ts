@@ -1,5 +1,5 @@
 import type { Game_Actor } from "../object";
-import type { Data_Skill } from "../../schema/";
+import type { Data_Skill } from "@sigureya/rpgtypes";
 import type { Window_Selectable } from "./Window_Selectable";
 import type { ISelectable } from "./types/ISelctable";
 

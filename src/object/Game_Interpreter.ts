@@ -1,9 +1,9 @@
 import type {
+  EventCommand,
+  CommandParameters,
   ConstatnOrVariable,
   OPERATION,
-  CommandParameters,
-  EventCommand,
-} from "../../schema";
+} from "@sigureya/rpgtypes";
 import type { Game_Actor } from "./Game_Actor";
 import type { Game_Battler } from "./Game_Battler";
 

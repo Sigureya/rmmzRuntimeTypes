@@ -1,7 +1,7 @@
 import type { Rectangle } from "./rectangle";
-import type { Data_NamedItem } from "../../schema/data";
 import type { Window_Scrollable } from "./Window_Scrollable";
 import type { IHelpListner } from "./types/HelpListener";
+import type { Data_NamedItem } from "@sigureya/rpgtypes";
 
 export declare class Window_Selectable extends Window_Scrollable {
   index(): number;

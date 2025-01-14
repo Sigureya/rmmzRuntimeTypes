@@ -1,8 +1,8 @@
+import type { Data_Equipment } from "@sigureya/rpgtypes";
 import type { Game_Actor } from "../object";
-import type { Data_Equipment } from "../../schema";
 import type { Window_StatusBase } from "./Window_StatusBase";
 
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Window_ShopStatus
 //
 // The window for displaying number of items in possession and the actor's

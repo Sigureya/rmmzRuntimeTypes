@@ -1,4 +1,4 @@
-import type { AudioFileParams } from "../../types/";
+import type { AudioFileParams } from "@sigureya/rpgtypes";
 import type { Game_Character } from "./Game_Character";
 import type { Direction8 } from "./types/interface/character";
 

@@ -1,7 +1,7 @@
-import type { Data_UsableItem } from "../../schema";
+import type { Data_UsableItem } from "@sigureya/rpgtypes";
 import type { Window_ItemList } from "./Window_ItemList";
 
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Window_BattleItem
 //
 // The window for selecting an item to use on the battle screen.

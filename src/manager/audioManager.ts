@@ -1,8 +1,8 @@
-import type { AudioFileParams } from "../../types";
-import type { WebAudio } from "../core";
-
-interface AudioBuffer {}
-
+import type { AudioFileParams } from "@sigureya/rpgtypes";
+import type { WebAudio } from "../game/core";
+interface AudioBufferRMMZ {
+  dummy: number;
+}
 export interface AudioManager {
   _bgmVolume: number;
   _bgsVolume: number;
@@ -42,12 +42,12 @@ export interface AudioManager {
   fadeOutMe(duration: number): void;
   stopMe(): void;
   playSe(se: AudioFileParams): void;
-  updateSeParameters(buffer: AudioBuffer, se: AudioFileParams): void;
+  updateSeParameters(buffer: AudioBufferRMMZ, se: AudioFileParams): void;
   cleanupSe(): void;
   stopSe(): void;
-  playStaticSe(se: AudioBuffer): void;
-  loadStaticSe(se: AudioBuffer): void;
-  isStaticSe(se: AudioBuffer): boolean;
+  playStaticSe(se: AudioBufferRMMZ): void;
+  loadStaticSe(se: AudioBufferRMMZ): void;
+  isStaticSe(se: AudioBufferRMMZ): boolean;
 
   saveBgm(): AudioFileParams;
   saveBgs(): AudioFileParams;

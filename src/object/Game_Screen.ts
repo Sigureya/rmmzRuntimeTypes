@@ -1,7 +1,6 @@
+import type { ColorRGBA } from "@sigureya/rpgtypes";
 import type { Game_Picture } from "./Game_Picture";
-import type { ColorRGBA } from "../../types/colorRGBA";
-
-//-----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Game_Screen
 //
 // The game object class for screen effect data, such as changes in color tone

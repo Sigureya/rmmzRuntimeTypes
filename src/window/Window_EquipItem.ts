@@ -1,7 +1,7 @@
 import type { Game_Actor } from "../object";
-import type { Data_Equipment } from "../../schema";
 import type { Window_Status } from "./Window_Status";
 import type { Window_ItemList } from "./Window_ItemList";
+import type { Data_Equipment } from "@sigureya/rpgtypes";
 
 export declare class Window_EquipItem extends Window_ItemList {
   maxCols(): number;
