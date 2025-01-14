@@ -1,4 +1,4 @@
-import type { Data_State, Data_Equipment, Data_Weapon, Data_Armor, Data_Skill, ParamID, Data_UsableItem } from "../../schema";
+import type { Data_Armor, Data_Equipment, Data_Skill, Data_State, Data_UsableItem, Data_Weapon, ParamID } from "@sigureya/rpgtypes";
 import type { IBattlerBase } from "./types/interface/battler/base";
 export declare class Game_BattlerBase implements IBattlerBase {
     canEquip(item: Data_Equipment): boolean;

@@ -1,4 +1,4 @@
-import type { ColorRGBA } from "../../types/colorRGBA";
+import type { ColorRGBA } from "@sigureya/rpgtypes";
 export declare class Game_Picture {
     _name: string;
     _origin: number;
