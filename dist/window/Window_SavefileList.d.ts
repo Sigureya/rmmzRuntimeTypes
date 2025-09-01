@@ -1,6 +1,6 @@
-import type { SaveFileInfo } from "@sigureya/rpgtypes";
 import type { Rectangle } from "./rectangle";
 import type { Window_Selectable } from "./Window_Selectable";
+type SaveFileInfo = unknown;
 export declare class Window_SavefileList extends Window_Selectable {
     setMode(mode: string, autosave: boolean): void;
     maxItems(): number;
@@ -18,3 +18,4 @@ export declare class Window_SavefileList extends Window_Selectable {
     drawPlaytime(info: SaveFileInfo, x: number, y: number, width: number): void;
     playOkSound(): void;
 }
+export {};

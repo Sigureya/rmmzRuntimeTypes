@@ -2,7 +2,7 @@ import type { Rectangle } from "./rectangle";
 import type { Window_Status } from "./Window_Status";
 import type { Window_Selectable } from "./Window_Selectable";
 import type { ISelectable } from "./types/ISelctable";
-import type { Data_Item, ShopGoods } from "@sigureya/rpgtypes";
+import type { Data_Item, ParamArray_ShopGoods } from "@sigureya/rpgtypes";
 
 // -----------------------------------------------------------------------------
 // Window_ShopBuy
@@ -14,7 +14,7 @@ export declare class Window_ShopBuy
 {
   initialize(rect: Rectangle): void;
 
-  setupGoods(shopGoods: ShopGoods[]): void;
+  setupGoods(shopGoods: ParamArray_ShopGoods[]): void;
 
   maxItems(): number;
 
@@ -34,7 +34,7 @@ export declare class Window_ShopBuy
 
   makeItemList(): boolean;
 
-  goodsToItem(goods: ShopGoods): Data_Item;
+  goodsToItem(goods: ParamArray_ShopGoods): Data_Item;
 
   drawItem(index: number): void;
 
