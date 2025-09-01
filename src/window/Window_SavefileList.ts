@@ -1,7 +1,7 @@
-import type { SaveFileInfo } from "@sigureya/rpgtypes";
 import type { Rectangle } from "./rectangle";
 import type { Window_Selectable } from "./Window_Selectable";
 
+type SaveFileInfo = unknown;
 // -----------------------------------------------------------------------------
 // Window_SavefileList
 //

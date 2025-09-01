@@ -1,12 +1,7 @@
 import type { Game_Character } from "./Game_Character";
 import type { LAST_ACTION_TYPES } from "./constant/gameTemp";
 import type { Game_Battler } from "./Game_Battler";
-import type {
-  AnimationRequest,
-  AnimationTarget,
-  BallonRequest,
-  Data_CommonEvent,
-} from "@sigureya/rpgtypes";
+import type { Data_CommonEvent } from "@sigureya/rpgtypes";
 
 export declare class Game_Temp {
   _isPlaytest: boolean;
@@ -17,8 +12,8 @@ export declare class Game_Temp {
   _needsBattleRefresh: boolean;
   _lastActionData: number[];
   _commonEventQueue: number[];
-  _animationQueue: AnimationRequest<AnimationTarget>[];
-  _balloonQueue: BallonRequest[];
+  _animationQueue: unknown[];
+  _balloonQueue: unknown[];
   constructor();
   initialize(): void;
   isPlaytest(): boolean;
@@ -39,14 +34,14 @@ export declare class Game_Temp {
   clearCommonEventReservation(): void;
   isCommonEventReserved(): boolean;
   requestAnimation(
-    targets: AnimationTarget[],
+    targets: unknown[],
     animationId: number,
     mirror?: boolean
   ): void;
 
-  retrieveAnimation(): AnimationRequest<AnimationTarget> | undefined;
+  retrieveAnimation(): unknown | undefined;
   requestBalloon(target: Game_Character, balloonId: number): void;
-  retrieveBalloon(): BallonRequest | undefined;
+  retrieveBalloon(): unknown | undefined;
   lastActionData(type: LAST_ACTION_TYPES): number;
   setLastActionData(type: LAST_ACTION_TYPES, value: number): void;
   setLastUsedSkillId(skillID: number): void;

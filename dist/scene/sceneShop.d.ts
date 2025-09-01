@@ -1,8 +1,8 @@
-import type { ShopGoods } from "@sigureya/rpgtypes";
+import type { ParamArray_ShopGoods } from "@sigureya/rpgtypes";
 import type { Rectangle } from "../window";
 export declare class Scene_Shop {
     initialize(): void;
-    prepare(goods: ShopGoods[], purchaseOnly: boolean): void;
+    prepare(goods: ParamArray_ShopGoods[], purchaseOnly: boolean): void;
     create(): void;
     createGoldWindow(): void;
     goldWindowRect(): Rectangle;

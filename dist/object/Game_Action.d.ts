@@ -1,4 +1,4 @@
-import type { Action, Data_UsableItem, ItemEffect } from "@sigureya/rpgtypes";
+import type { Data_UsableItem, Enemy_Action, ItemEffect } from "@sigureya/rpgtypes";
 import type { Game_Unit } from "./Game_Unit";
 import type { IUnit, IUsableItem, IBattler } from "./types/";
 export declare class Game_Action {
@@ -33,7 +33,7 @@ export declare class Game_Action {
     subject(): IBattler;
     friendsUnit(): IUnit<IBattler>;
     opponentsUnit(): IUnit<IBattler>;
-    setEnemyAction(action: Action): void;
+    setEnemyAction(action: Enemy_Action): void;
     setAttack(): void;
     setGuard(): void;
     setSkill(skillId: number): void;
