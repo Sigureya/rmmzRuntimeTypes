@@ -2,7 +2,7 @@ import type { Data_UsableItem } from "@sigureya/rpgtypes";
 import type { Game_Actor } from "../object";
 import type { Window_ItemList, Window_MenuActor } from "../window";
 import type { Rectangle } from "../window/rectangle";
-import type { Scene_MenuBase } from "./SceneMenuBase";
+import type { Scene_MenuBase } from "./menuBase";
 
 export declare class Scene_ItemBase extends Scene_MenuBase {
   _actorWindow: Window_MenuActor;
