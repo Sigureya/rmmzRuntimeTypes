@@ -1,5 +1,5 @@
 import type { Rectangle } from "../window";
-import type { Scene_MenuBase } from "./SceneMenuBase";
+import type { Scene_MenuBase } from "./menuBase";
 
 export declare class Scene_Equip extends Scene_MenuBase {
   createStatusWindow(): void;
