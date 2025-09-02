@@ -1,4 +1,4 @@
-import type { Scene_File } from "./sceneFIle";
+import type { Scene_File } from "./fIle";
 
 export declare class Scene_Load extends Scene_File {
   initialize(): void;
