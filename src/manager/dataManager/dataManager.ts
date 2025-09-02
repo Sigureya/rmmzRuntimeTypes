@@ -1,3 +1,12 @@
+import {
+  Data_Item,
+  Data_Map,
+  Data_Skill,
+  Data_Weapon,
+  Data_Armor,
+} from "@sigureya/rpgtypes";
+import { RpgDataTypes } from "./dataTypes";
+
 export interface DataManager_Interface {
   removeInvalidGlobalInfo(): void;
   loadGlobalInfo(): void;
@@ -9,19 +18,20 @@ export interface DataManager_Interface {
   loadMapData(mapId: number): void;
   makeEmptyMap(): void;
   isMapLoaded(): boolean;
-  onLoad(): void;
-  isMapObject(): boolean;
-  extractArrayMetadata(): void;
+  onLoad(object: RpgDataTypes): void;
+  isMapObject(data: RpgDataTypes): data is Data_Map;
+  extractArrayMetadata(list: unknown): void;
   extractMetadata(): void;
   isBattleTest(): boolean;
   isEventTest(): boolean;
   isTitleSkip(): boolean;
-  isSkill(): boolean;
-  isItem(): boolean;
-  isWeapon(): boolean;
-  isArmor(): boolean;
+  isSkill(data: unknown): data is Data_Skill;
+  isItem(data: unknown): data is Data_Item;
+  isWeapon(data: unknown): data is Data_Weapon;
+  isArmor(data: unknown): data is Data_Armor;
   createGameObjects(): void;
   setupNewGame(): void;
   setupBattleTest(): void;
   setupEventTest(): void;
+  saveGame(savefileId: number): Promise<void>;
 }
