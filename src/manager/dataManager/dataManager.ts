@@ -8,8 +8,8 @@ import {
 import { RpgDataTypes } from "./dataTypes";
 
 export interface DataManager_Interface {
-  removeInvalidGlobalInfo(): void;
   loadGlobalInfo(): void;
+  removeInvalidGlobalInfo(): void;
   saveGlobalInfo(): void;
   isGlobalInfoLoaded(): boolean;
   loadDatabase(): void;
@@ -33,5 +33,11 @@ export interface DataManager_Interface {
   setupNewGame(): void;
   setupBattleTest(): void;
   setupEventTest(): void;
+  isAnySavefileExists(): boolean;
+  latestSavefileId(): number;
+  earliestSavefileId(): number;
+  emptySavefileId(): number;
+
+  loadGame(savefileId: number): Promise<number>;
   saveGame(savefileId: number): Promise<void>;
 }
