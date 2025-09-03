@@ -5,3 +5,4 @@ export * from "./sprite";
 export * from "./window";
 
 export * from "./globals";
+export * from "./globalData/globalData";
