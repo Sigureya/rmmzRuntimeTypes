@@ -2,7 +2,7 @@ import { Data_Item, Data_Map, Data_Skill, Data_Weapon, Data_Armor } from "@sigur
 import { RpgDataTypes } from "./dataTypes";
 import { DataFileInfo } from "./types";
 export interface DataManager_Interface {
-    _databaseFiles: DataFileInfo[];
+    get _databaseFiles(): DataFileInfo[];
     loadGlobalInfo(): void;
     removeInvalidGlobalInfo(): void;
     saveGlobalInfo(): void;
