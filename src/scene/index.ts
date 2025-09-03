@@ -11,3 +11,4 @@ export { Scene_Equip } from "./equip";
 export { Scene_Status } from "./status";
 export { Scene_Option } from "./options";
 export { Scene_Shop } from "./shop";
+export { Scene_Map } from "./map";

@@ -1,7 +1,8 @@
 import type { Window_SavefileList } from "../window/Window_SavefileList";
 import type { Rectangle } from "../window";
 import type { Scene_MenuBase } from "./menuBase";
-export declare class Scene_File extends Scene_MenuBase {
+import { FileSceneInterface } from "./interface/files/fileBase";
+export declare class Scene_File extends Scene_MenuBase implements FileSceneInterface {
     _listWindow: Window_SavefileList;
     initialize(): void;
     create(): void;
