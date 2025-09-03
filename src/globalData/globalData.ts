@@ -6,12 +6,15 @@ import type {
   Data_CommonEvent,
   Data_Enemy,
   Data_Item,
+  Data_Map,
   Data_MapInfo,
   Data_Skill,
   Data_State,
   Data_System,
   Data_Tileset,
+  Data_Troop,
   Data_Weapon,
+  EventCommand,
   IdentifiedItems,
 } from "@sigureya/rpgtypes";
 
@@ -28,3 +31,5 @@ export declare let $dataSystem: Data_System;
 export declare let $dataTilesets: IdentifiedItems<Data_Tileset>;
 export declare let $dataMapinfos: IdentifiedItems<Data_MapInfo>;
 export declare let $dataWeapons: IdentifiedItems<Data_Weapon>;
+export declare let $dataTroops: IdentifiedItems<Data_Troop>;
+export declare let $dataMap: Data_Map<EventCommand>;
