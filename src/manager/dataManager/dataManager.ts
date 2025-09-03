@@ -6,8 +6,10 @@ import {
   Data_Armor,
 } from "@sigureya/rpgtypes";
 import { RpgDataTypes } from "./dataTypes";
+import { DataFileInfo } from "./types";
 
 export interface DataManager_Interface {
+  _databaseFiles: DataFileInfo[];
   loadGlobalInfo(): void;
   removeInvalidGlobalInfo(): void;
   saveGlobalInfo(): void;
